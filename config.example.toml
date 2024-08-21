@@ -1,92 +1,92 @@
-[app]
-    project_version="0.1.2"
-    video_source = "pexels"  # "pexels" or "pixabay"
-    # Pexels API Key
-    # Register at https://www.pexels.com/api/ to get your API key.
-    # You can use multiple keys to avoid rate limits.
-    # For example: pexels_api_keys = ["123adsf4567adf89","abd1321cd13efgfdfhi"]
-    # 特别注意格式，Key 用英文双引号括起来，多个Key用逗号隔开
-    pexels_api_keys = []
+[应用]
+    项目版本=“ 0.1 . 2 ”project_version=“ 0.1。2 ”
+    video_source = "pexels"     # "pexels" 或 "pixabay" video_source = "pexels" # "pexels" 或 "pixabay"
+    # Pexels API 按键# Pexels API 按键
+    # 在 https://www.pexels.com/api/ 注册以获取您的 API 密钥。# 在 https://www.pexels.com/api/ 注册以获取您的 API 密钥。
+    #您可以使用多个按钮来避免速率限制。#您可以使用多个按钮来避免速率限制。
+    # 例如：pexels_api_keys = ["123adsf4567adf89","abd1321cd13efgfdfhi"]# 例如：pexels_api_keys = ["123adsf4567adf89","abd1321cd13efgfdfhi"]
+    #特别注意格式，Key用英文双引号括起来，多个Key用逗号隔开#特别注意格式，Key用英文双引号括起来，多个Key用逗号隔开
+    复制代码
 
-    # Pixabay API Key
-    # Register at https://pixabay.com/api/docs/ to get your API key.
-    # You can use multiple keys to avoid rate limits.
-    # For example: pixabay_api_keys = ["123adsf4567adf89","abd1321cd13efgfdfhi"]
-    # 特别注意格式，Key 用英文双引号括起来，多个Key用逗号隔开
-    pixabay_api_keys = []
+    #Pixabay API 按键#Pixabay API 按键
+    # 在 https://pixabay.com/api/docs/ 注册以获取您的 API 密钥。# 在 https://pixabay.com/api/docs/ 注册以获取您的 API 密钥。
+    #您可以使用多个按钮来避免速率限制。#您可以使用多个按钮来避免速率限制。
+    # 例如：pixabay_api_keys = ["123adsf4567adf89","abd1321cd13efgfdfhi"]# 例如：pixabay_api_keys = ["123adsf4567adf89","abd1321cd13efgfdfhi"]
+    #特别注意格式，Key用英文双引号括起来，多个Key用逗号隔开#特别注意格式，Key用英文双引号括起来，多个Key用逗号隔开
+    pixabay_api_keys = [      ] pixabay_api_keys = [       ]
 
-    # 如果你没有 OPENAI API Key，可以使用 g4f 代替，或者使用国内的 Moonshot API
-    # If you don't have an OPENAI API Key, you can use g4f instead
+    # 如果你没有 OPENAI API Key，可以使用 g4f 代替，或者使用国内的 Moonshot API# 如果你没有 OPENAI API Key，可以使用 g4f 代替，或者使用国内的 Moonshot API
+    #如果您没有 OPENAI API Key，您可以使用 g4f#如果您没有 OPENAI API Key，您可以使用 g4f 代替
 
-    # 支持的提供商 (Supported providers):
-    #   openai
-    #   moonshot (月之暗面)
-    #   oneapi
-    #   g4f
-    #   azure
-    #   qwen (通义千问)
-    #   gemini
-    llm_provider="openai"
+    #支持的事业（支持的企业）：#支持的事业（支持的企业）：
+    #openai#
+    #moonshot（月之暗面）#moonshot（月之暗面）
+    #一个API
+    #g4f#g4f
+    #天蓝色# azure
+    # qwen (通义千问)# qwen (通义千问)
+    #双子座#gemini
+    llm_provider = “openai” llm_provider = “openai”
 
-    ########## Ollama Settings
-    # No need to set it unless you want to use your own proxy
-    ollama_base_url = ""
-    # Check your available models at https://ollama.com/library
-    ollama_model_name = ""
+    ########## 奥拉马设置########## 奥拉马设置
+    # 除非你想使用自己的代理，否则设置# 不需要设置，除非你想使用自己的代理
+    ollama_base_url =“”ollama_base_url =“”
+    # 在 https://ollama.com/library 检查可用的模型# 在 https://ollama.com/library 检查可用的模型
+    ollama_模型名称=“”ollama_模型名称=“”
 
-    ########## OpenAI API Key
-    # Get your API key at https://platform.openai.com/api-keys
-    openai_api_key = ""
-    # No need to set it unless you want to use your own proxy
-    openai_base_url = ""
-    # Check your available models at https://platform.openai.com/account/limits
-    openai_model_name = "gpt-4-turbo"
+    ########## OpenAI API密钥########## OpenAI API密钥
+    # 在 https://platform.openai.com/api-keys 获取您的 API 密钥# 在 https://platform.openai.com/api-keys 获取您的 API 密钥
+    openai_api_key =“””openai_api_key =“”
+    # 除非你想使用自己的代理，否则设置# 不需要设置，除非你想使用自己的代理
+    openai_base_url =“”openai_base_url =“”
+    # 在 https://platform.openai.com/account/limits 检查可用的模型# 在 https://platform.openai.com/account/limits 检查可用的模型
+    openai_model_name =“gpt -4 -turbo””openai_model_name =“gpt -4 -turbo”
 
-    ########## Moonshot API Key
-    # Visit https://platform.moonshot.cn/console/api-keys to get your API key.
-    moonshot_api_key=""
-    moonshot_base_url = "https://api.moonshot.cn/v1"
-    moonshot_model_name = "moonshot-v1-8k"
+    ########## Moonshot API 按键########## Moonshot API 按键
+    # 访问https://platform.moonshot.cn/console/api-keys 获取您的API 密钥。# 访问https://platform.moonshot.cn/console/api-keys 获取您的API 密钥。
+    moonshot_api_key = “” moonshot_api_key = “”
+    moonshot_base_url = "https://api.moonshot.cn/v1" moonshot_base_url = "https://api.moonshot.cn/v1"
+    moonshot_model_name =“moonshot-v 1    -8 k”moonshot_model_name =“moonshot-v 1   -8 k”
 
-    ########## OneAPI API Key
-    # Visit https://github.com/songquanpeng/one-api to get your API key
-    oneapi_api_key=""
-    oneapi_base_url=""
-    oneapi_model_name=""
+    ########## OneAPI API 密钥########## OneAPI API 密钥
+    # 访问 https://github.com/songquanpeng/one-api 获取 API key# 访问 https://github.com/songquanpeng/one-api 获取 API key
+    oneapi_api_key = "" oneapi_api_key= ""
+    oneapi_base_url = "" oneapi_base_url= ""
+    oneapi_model_name = "" oneapi_model_name= ""
 
-    ########## G4F
-    # Visit https://github.com/xtekky/gpt4free to get more details
-    # Supported model list: https://github.com/xtekky/gpt4free/blob/main/g4f/models.py
-    g4f_model_name = "gpt-3.5-turbo"
+    ########## G4F########## G4F
+    # 访问 https://github.com/xtekky/gpt4free 获取更多详细信息# 访问 https://github.com/xtekky/gpt4free 获取更多详细信息
+    #支持的模型列表：https://github.com/xtekky/gpt4free/blob/main/g4f/models.py#支持的模型列表：https://github.com/xtekky/gpt4free/blob/main/g4f /模型.py
+    g4f_模型名称=“gpt -3.5 -turbo”
 
-    ########## Azure API Key
-    # Visit https://learn.microsoft.com/zh-cn/azure/ai-services/openai/ to get more details
-    # API documentation: https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference
-    azure_api_key = ""
-    azure_base_url=""
-    azure_model_name="gpt-35-turbo" # replace with your model deployment name
-    azure_api_version = "2024-02-15-preview"
+    ########## Azure API 密钥
+    # 访问 https://learn.microsoft.com/zh-cn/azure/ai-services/openai/ 了解更多详细信息# 访问 https://learn.microsoft.com/zh-cn/azure/ai-services/openai/ 了解更多详细信息# 访问 https://learn.microsoft.com/zh-cn/azure/ai-services/openai/ 了解更多详细信息# 访问 https://learn.microsoft.com/zh -cn/azure/ai-services /openai/ 了解更多详细信息
+    # API文档：https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference# API文档：https://learn.microsoft.com/zh-cn/azure/ai-services /openai/参考
+    azure_api_key =“”azure_api_key =“”
+    azure_base_url =“”azure_base_url =“”
+    azure_model_name = "gpt-35-turbo"   # 替换为你的模型配置名称 azure_model_name = "gpt-35-turbo" # 替换为你的模型配置名称
+    azure_api_version =“ 2024   -02    -15​ - 预览版”azure_api_version =“ 2024    -02   -15​ - 预览版”
 
-    ########## Gemini API Key
-    gemini_api_key=""
-    gemini_model_name = "gemini-1.5-flash"
+    ########## Gemini API 按键########## Gemini API 按键
+    gemini_api_key = “AIzaSyAyMuM7STVmWaefU 1 VTnVz 3 r 7 HEvmnk 0 dI””gemini_api_key = “AIzaSyAyMuM7STVmWaefU 1 VTnVz 3 r 7 HEvmnk 0 dI””
+    gemini_model_name = “gemini -1.5 -flash”gemini_model_name = “gemini -1.5 -flash”
 
-    ########## Qwen API Key
-    # Visit https://dashscope.console.aliyun.com/apiKey to get your API key
-    # Visit below links to get more details
-    # https://tongyi.aliyun.com/qianwen/
-    # https://help.aliyun.com/zh/dashscope/developer-reference/model-introduction
-    qwen_api_key = ""
-    qwen_model_name = "qwen-max"
+    ########## Qwen API 按键########## Qwen API 按键
+    # 访问https://dashscope.console.aliyun.com/apiKey 获取您的API密钥# 访问https://dashscope.console.aliyun.com/apiKey 获取您的API密钥
+    # 访问以下链接以获取更多详细信息# 访问以下链接以获取更多详细信息
+    # https://tongyi.aliyun.com/qianwen/# https://tongyi.aliyun.com/qianwen/
+    # https://help.aliyun.com/zh/dashscope/developer-reference/model-introduction# https://help.aliyun.com/zh/dashscope/developer-reference/model-introduction
+    qwen_api_key = “”qwen_api_key = “”
+    qwen_model_name =“qwen-max”qwen_model_name =“qwen-max”
 
 
-    ########## DeepSeek API Key
-    # Visit https://platform.deepseek.com/api_keys to get your API key
-    deepseek_api_key = ""
-    deepseek_base_url = "https://api.deepseek.com"
-    deepseek_model_name = "deepseek-chat"
+    ########## DeepSeek API 轴########## DeepSeek API 轴
+    # 访问 https://platform.deepseek.com/api_keys 获取您的 API 密钥# 访问 https://platform.deepseek.com/api_keys 获取您的 API 密钥
+    deepseek_api_key =“”deepseek_api_key =“”
+    deepseek_base_url = “https://api.deepseek.com” deepseek_base_url = “https://api.deepseek.com”
+    deepseek_model_name = “deepseek-chat”deepseek_model_name = “deepseek-chat”
 
-    # Subtitle Provider, "edge" or "whisper"
+    # 字幕顶部，“edge”或“whisper”
     # If empty, the subtitle will not be generated
     subtitle_provider = "edge"
 
